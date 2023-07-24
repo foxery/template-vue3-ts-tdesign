@@ -1,0 +1,111 @@
+// 对部分样式进行重置
+body {
+  color: var(--td-text-color-secondary);
+  font-family: -apple-system, BlinkMacSystemFont, var(--td-font-family);
+  font: var(--td-font-body-medium);
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+pre {
+  font-family: var(--td-font-family);
+}
+
+ul,
+dl,
+li,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-spacing: 0;
+}
+
+.t-button-link,
+a {
+  color: var(--td-brand-color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color @anim-duration-base @anim-time-fn-easing;
+
+  &:hover {
+    color: var(--td-brand-color-hover);
+  }
+
+  &:active {
+    color: var(--td-brand-color-active);
+  }
+
+  &--active {
+    color: var(--td-brand-color-active);
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.t-button-link {
+  margin-right: var(--td-comp-margin-xxl);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.gui-wrap {
+  position: relative;
+  z-index: 101;
+}
+.t-table__header {
+  tr {
+    background-color: #f3f3f3;
+  }
+  .t-table__th-cell-inner {
+    color: #000000;
+    font-weight: 500;
+  }
+}
+
+.t-button .t-button__text {
+  // dropdown尾部图表对齐
+  align-items: center;
+}
+
+// 卡片
+.t-card {
+  border-radius: 0;
+  &.rounded {
+    border-radius: var(--td-radius-medium);
+  }
+}
+
+// 双选表单优化间距
+.type-select {
+  .t-input--prefix {
+    padding: 0 4px;
+  }
+  .t-input__suffix {
+    margin-left: 4px !important;
+  }
+}
