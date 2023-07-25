@@ -1,5 +1,5 @@
 {
-  "name": "highway-maintenance-admin",
+  "name": "vue3-tdesign-template",
   "version": "1.0.0",
   "scripts": {
     "dev:mock": "vite --open --mode mock",
